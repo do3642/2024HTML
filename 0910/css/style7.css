@@ -1,0 +1,36 @@
+.rel{
+  position:relative ;
+  /* 원래 위치의 기준으로 이동시킬 수 있음 */
+  left: 50px;
+  bottom:100px;
+z-index: -1;
+
+}
+
+.box{
+  width: 500px;
+  height: 3000px;
+  border: 1px solid;
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.abs {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.fixed{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.sticky {
+background-color: beige;
+position: sticky;
+top: 0;
+z-index: 0;
+}

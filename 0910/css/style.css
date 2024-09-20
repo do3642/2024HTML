@@ -1,0 +1,19 @@
+li{
+  display: inline;
+  background-color: brown;
+  margin: 10px;
+}
+
+span{
+  display: inline-block;
+  border: 1px solid #ccc;
+  /* 선두께, 선스타일, 선색깔 */
+  width:250px;
+  height: 300px;
+  opacity: .5;
+  text-align: center;
+}
+.vis{
+  display: none;
+
+}

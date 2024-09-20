@@ -1,0 +1,39 @@
+
+div a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid;
+  width: 70px;
+  text-align: center;
+  padding: 3px 15px;
+  background-color: yellow;
+}
+
+div a:hover{
+  opacity: .2;
+}
+
+
+ul{
+  padding: 10px;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 10px;
+}
+ul li::before{
+  content: '♥';
+  margin-right: 10px;
+}
+
+
+.sale::after{
+  content: 'SALE';
+  margin-left: 10px;
+  font-size: 10px;
+  background-color:deeppink;
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: #fff;
+}

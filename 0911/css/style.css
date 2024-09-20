@@ -1,0 +1,120 @@
+/* 동위선택자 */
+/* 기준태그 뒤에부터 선택이 됨 */
+h1 ~ p {
+  background-color: aqua;
+}
+
+/* 인접 동위 선택자 */
+h1 + p {
+  font-size: 40px;
+}
+
+
+input[type=radio]:checked + label{
+  color: red;
+}
+
+/* 가상클래스(가상선택자) */
+.box > p:first-child{
+  background-color: #aabb00;
+}
+.box > p:last-child{
+  background: #eeaa00;
+}
+
+
+
+/* 3번째 자식중에 h3한테 넣어주세요 */
+/* 자식요소중 3번째가 h3일때 넣음 중간에 다른 태그 껴있으면 적용안됨 */
+/* .box2 > h3:nth-child(1){
+  background-color: #ff00ff;
+} */
+
+/* -n + 4  4전까지만
+4n  4의 배수 */
+/* :nth-child(n+2):nth-child(-n+4) 
+2~4까지 */
+
+
+.box2 > h3:nth-of-type(3){
+  background: #ffff00;
+}
+
+
+/* 방문하지 않은 경우 적용 */
+a:link{
+  color: aquamarine;
+}
+
+/* 방문한경우 */
+a:visited{
+  color: black;
+}
+
+a:hover{
+  color: #aabb00;
+}
+
+/* 클릭됐을때 */
+a:active{
+  color: red;
+}
+
+/* 탭키 / 인풋은 클릭했을때*/
+a:focus{
+  color: blueviolet;
+}
+
+
+#focus:focus  {
+  background-color: #ffff00;
+}
+
+#focus::placeholder{
+  color: red;
+}
+
+*::selection{
+  background-color: peachpuff;
+  color: #fff;
+}
+
+
+/* ::before,::after */
+/* 인라인 요소임 */
+h2::before{
+  content: '★';
+  color: red;
+}
+
+h2::after{
+  content: 'new';
+  color: white;
+  background-color: red;
+  font-size: 14px;
+}
+
+
+.img {
+  width: 600px;height: 400px;
+  background: url(../../img/galio.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.img::before{
+  content: '갈리오';
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+/* 속성값 뽑아오기 */
+.link > a::after{
+  content: ' ('attr(href)')';
+
+}

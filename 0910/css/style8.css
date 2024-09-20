@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+i{
+  font-size: 30px;
+  float: left;
+  
+}
+
+
+#wrap{}
+
+header{
+  background-color: rgb(171, 161, 209);
+  overflow: hidden;
+  position: sticky;
+  top:0;
+}
+header > div {
+  float: left;
+  padding: 5px 0px 0px 0;
+  margin: 10px 10px 10px 5px;
+  
+ 
+}
+header i{}
+
+header h1{
+  width: 100px;
+  float: left;
+  font-size: 25px;
+  font-weight: 400;
+  
+}
+header nav{
+  float: right;
+}
+header nav ul{}
+header nav ul li{
+  float: left;
+  padding: 5px 5px 5px 5px;
+  margin: 10px 10px 5px 5px;
+  font-size: 20px;
+}
+
+
+
+section{
+  clear: both;
+  width: 90%;
+  margin: auto;
+  height: 3000px;
+  padding-top: 100px;
+}
+section article{}
+section article h2{
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+section article p{
+  line-height: 200%;
+  letter-spacing: 1.2px;
+  
+}
+
+.moveBtn{
+  position: fixed;
+  bottom: 50px;
+  right: 30px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 50%;
+  color: #333;
+}
+a{
+  text-decoration: none;
+  color: #333;
+  
+}
+
+.moveBtn:hover{
+  background-color: #333;
+}
+.moveBtn:hover i{
+  color: #fff;
+}
+

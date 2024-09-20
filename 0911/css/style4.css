@@ -1,0 +1,172 @@
+*{
+  list-style-type: none;
+  box-sizing: border-box;
+}
+.parent {
+  height: 150px;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.child {
+  background-color: slateblue;
+  width: 100px;
+  height: 100px;
+  border: 1px solid chartreuse;
+  color: #fff;
+  
+}
+
+
+.parent2{
+  border: 1px solid;
+  height: 150px;
+  
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+.child2 {
+  height: 100px;
+  width: 100px;
+  background-color: royalblue;
+}
+
+
+.parent3{
+  height: 200px;
+  border: 1px solid;
+  display: flex;
+  flex-direction: row-reverse
+}
+
+.parent3 > div{
+  width: 100px;
+}
+.child-1{
+  background-color: darkmagenta;
+}
+.child-2{
+  background-color: darkolivegreen;
+}
+.child-3{
+  background-color: dimgrey;
+}
+
+
+
+
+
+.parent4{
+  border: 1px solid;
+  height: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* align-content: space-around; */
+
+}
+.parent4 > div {
+  width: 25px;
+  height: 25px;
+  border: 1px solid;
+}
+
+.c {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+
+
+
+.parent5 {
+  border: 1px solid;
+  display: flex;
+  height: 300px;
+}
+
+.parent5 > div{
+  width: 100px;
+  height: 100px;
+  border: 1px solid;
+  /* flex-grow: 1; */
+}
+
+.c1{
+  /* flex-grow: 1; */
+  /* flex-basis: 100px;
+  order: 1; */
+  align-self: center;
+}
+.c2{
+  /* flex-grow: 2; */
+  /* flex-basis: 200px; */
+  align-self: flex-end;
+
+}
+.c3{
+  /* flex-grow: 1; */
+  /* flex-basis: 300px; */
+
+  margin: auto;
+
+}
+
+.ex{
+  width: 500px;
+  height: 500px;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex > div {
+  width: 400px;
+  height: 400px;
+  background-color: rgb(102, 76, 219);
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ex div > div {
+  width: 300px;
+  height: 300px;
+  background-color: darkblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ex div > div > p{
+  color: #fff;
+}
+
+.ex2{
+  height: 100px;
+  background-color: #9198e5;
+  display: flex;
+}
+
+.ex2 ul{
+  width: 100px;
+  border: 2px solid red;
+  display: flex;
+  padding:0;
+
+  
+}
+
+.ex2 ul li:first-child{
+  width: 50%;
+  background-color: aqua;
+}
+.ex2 ul li:last-child{
+  width: 50%;
+  background-color: bisque;
+}

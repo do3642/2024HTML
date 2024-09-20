@@ -1,0 +1,14 @@
+.f{
+  float: left;
+}
+
+.c{
+  clear: both;
+  /* 플로트 멈춤 */
+  
+}
+.container {
+  height: 500px;
+  border: 1px solid;
+  overflow:hidden;
+}

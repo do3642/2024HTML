@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+body{
+    background-color: yellow;
+   
+}
+/* #wrap{
+    width: 1920px;
+    height: 1080px;
+    animation: bgChange 3s linear infinite alternate;
+    
+
+}
+
+@keyframes bgChange {
+    0%{
+        background: url('../img/bg1.jpg') no-repeat;
+        background-size: cover;
+    }50%{
+        background: url('../img/bg2.jpg') no-repeat;
+        background-size: cover;
+    }100%{
+        background: url('../img/bg3.jpg') no-repeat;
+        background-size: cover;
+    }
+}
+
+
+ */
+
+
+
+section{
+    width: 100%;
+    position: absolute;
+    bottom: 5%;
+}
+
+/* 프로필 사진 들어갈 빈 태그 */
+.profile > p{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: url("../img/main1.jpg") no-repeat;
+    background-size: cover;
+
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+
+}
+
+/* 프로필 밑 상태메세지 */
+.profile-msg p{
+    text-align: center;
+    padding: 7px;
+    color: #333;
+
+}
+.profile-msg p:first-child{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+.profile-msg p:last-child{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* 하단 4가지 메뉴 */
+article{
+    position: relative;
+    width: 100%;
+}
+article ul{
+    text-align: center;
+  
+}
+article ul li{
+    display: inline-block;
+    text-align: center;
+    padding: 13px;
+    margin: 10px;
+    color: #333;
+
+}
+
+article ul li:hover p,article ul li:hover i{
+    opacity: .5;
+}
+
+article ul li i{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+article ul li p{
+    font-size: 15px;
+}
+
+
+
+

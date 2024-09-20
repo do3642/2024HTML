@@ -1,0 +1,71 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid;
+}
+
+.container{
+  width: 504px;
+  height: 500px;
+}
+.container header{}
+.container header > div{
+  height: 100px;
+}
+.container header .logo, .ham{
+  width: 100px;
+}
+.container header .title{
+  width: 300px;
+  float: left;
+}
+.container header .logo{
+  float: left;
+}
+.container header .ham{
+  float: right;
+}
+
+.container .main{
+  clear: both;
+}
+
+.main > div{
+  height: 300px;
+}
+.container .main .sections{
+  width: 200px;
+  float: left;
+}
+.container .main .sections > div{
+  height: 100px;
+}
+.container .main .sections .s1{}
+.container .main .sections .s2{}
+.container .main .sections .s3{}
+.container .main .content{
+  height: 300px;
+}
+
+
+.container footer{
+  clear: both;
+  
+}
+.container footer > div{
+  height: 100px;
+}
+.container footer .f1{
+  width: 100px;
+  float: left;
+}
+.container footer .f2{
+  width: 300px;
+  float: left;
+}
+.container footer .f3{
+  width: 100px;
+  float: right;
+}
+

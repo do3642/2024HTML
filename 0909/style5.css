@@ -1,0 +1,21 @@
+ul.nav li{
+  border-right: 1px solid #333;
+  
+}
+ul.nav {
+  list-style-type: none;
+}
+
+ul.nav li {
+  float: left;
+  text-align: center;
+  width: 18%;
+}
+
+ul.nav li:last-child{
+  border-right: none;
+}
+li a{
+  text-decoration: none;
+  color: #333;
+}

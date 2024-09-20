@@ -1,0 +1,67 @@
+div{
+  width: 100px;
+  height: 100px;
+  background-color: darkcyan;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+
+  /* 애니메이션 이름 */
+  animation-name: ani;
+
+  /* 동작시간 */
+  animation-duration: 3s;
+  /* 애니메이션 속도 조절 */
+  animation-timing-function: linear; /*일정한 속도*/
+  animation-timing-function: ease; /*빠름 -> 느림*/
+  animation-timing-function: ease-in; /*느림 -> 빠름*/
+  animation-timing-function: ease-out; /*빠름*/
+  animation-timing-function: ease-in-out; /*좀더느림빠름->느림?*/
+
+  /* 애니메이션 실행 전 대기시간 */
+  /* animation-delay: 1s; */
+  /* 반복횟수지정 */
+  animation-iteration-count: infinite; /*양수 넣어도 됨*/
+  /* 실행방향 */
+  animation-direction: alternate;
+  /* animation-direction: reverse; */
+  /* animation: ani 3s 1s linear infinite alternate; */
+
+}
+
+  @keyframes ani {
+    0%{
+      left:0;top:0;
+      transform: scale(1.1);
+      background-color: blueviolet;
+    }
+    25%{
+      left: 200px;
+      transform: scale(0.5);
+      background-color: aqua;
+    }
+    50%{
+      left: 500px;
+      top: 500px;
+      transform: rotate(90deg);
+    }
+    100%{
+      left:0;
+      top:0;
+    }
+    
+  }
+  /* @keyframes ani {
+     from {
+      left:0;
+      background-color: blueviolet;
+    }to{
+      left: 200px;
+      background-color: blanchedalmond;
+    } 
+     
+  } */
+
+  div:hover{
+    animation-play-state: paused;
+  }
